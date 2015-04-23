@@ -1,0 +1,17 @@
+typeset -U path
+path=(~/bin $path /opt/java6/bin $(ruby -rubygems -e "puts Gem.user_dir")/bin)
+alias systemctl='sudo systemctl'
+alias sysrestart='sudo systemctl restart'
+alias sysstop='sudo systemctl stop'
+alias sysstart='sudo systemctl start'
+alias reboot='/home/taylor/bin/reboot'
+alias poweroff='/home/taylor/bin/poweroff'
+alias icanhazip='curl icanhazip.com; echo'
+alias find='sudo find'
+alias pacman='sudo pacman'
+alias muhfucking='sudo'
+alias df='df -Th'
+alias ls='ls --color=auto'
+alias reboot='sudo reboot'
+alias plexwatch='sudo /opt/plexWatch/plexWatch.pl'
+alias fuck='sudo $(fc -ln -1)'
