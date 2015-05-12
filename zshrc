@@ -116,3 +116,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export EDITOR=vim
 export BULLET_ACCESS_TOKEN=P81dRv12Jp7cdza1zCbxyDidnyOl7YSV
+
+if [ -f /usr/bin/xtermcontrol ]; then
+ xtermcontrol
+fi
