@@ -102,3 +102,4 @@ if has('langmap') && exists('+langnoremap')
   " compatible).
   set langnoremap
 endif
+set number
