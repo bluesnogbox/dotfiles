@@ -120,3 +120,4 @@ export BULLET_ACCESS_TOKEN=P81dRv12Jp7cdza1zCbxyDidnyOl7YSV
 if [ -f /usr/bin/xtermcontrol ]; then
  xtermcontrol
 fi
+eval $(dircolors ~/.dircolors)
