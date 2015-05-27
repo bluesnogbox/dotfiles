@@ -1,0 +1,80 @@
+templates:
+  TV:
+    exists_series:
+      - /home/taylor/extdisk/media/tv/{{series_name}}
+    series:
+      - The Venture Bros.
+      - South Park:
+          begin: S18E01
+      - The Legend of Korra:
+          begin: S03E04
+      - Game of Thrones:
+          begin: S04E01
+      - Doctor Who 2005
+      - Girls:
+          begin: S03E05
+          exact: yes
+      - The Walking Dead:
+          begin: S04E09
+      - American Horror Story:
+          begin: S03E13
+    configure_series:
+      from:
+        thetvdb_favorites:
+          account_id: 80E67BF2004685E1
+          strip_dates: yes
+    download: /home/taylor/downloads/torrent/
+#    email:
+#      from: taylor.growden@gmail.com
+#      to: 8149773797@mms.att.net
+#      smtp_host: smtp.gmail.com
+#      smtp_port: 587
+#      smtp_username: taylor.growden@gmail.com
+#      smtp_password: manticore
+#      smtp_tls: yes
+    pushbullet:
+      apikey: P81dRv12Jp7cdza1zCbxyDidnyOl7YSV
+      device: ufenwEfsjAil4fNHk4
+      title: "{{task}} - Download started"
+      body: "{{series_name}} {{series_id}}"
+    transmission:
+      host: 192.168.1.18
+      port: 9091
+      username: taylor
+      password: manticore
+
+  movie:
+    transmission:
+      host: 192.168.1.18
+      port: 9091
+      username: taylor
+      password: manticore
+      path: /home/taylor/extdisk/media/movies/
+    pushbullet:
+      apikey: P81dRv12Jp7cdza1zCbxyDidnyOl7YSV
+      device: ufenwEfsjAiVsKnSTs
+      title: "{{task}} - Download started"
+      body: "{{series_name}} {{series_id}}"
+#    movie_queue: yes
+#    proper_movies: yes
+
+tasks:
+  iptorrents:
+    rss:
+      url: 'http://iptorrents.com/torrents/rss?download;l78;l66;l79;l5;l4;u=1251841;tp=5463c7a866d57e5092d0dfa4b5bf09c6'
+      username: bluesnogbox
+      password: manticore
+    template: TV
+
+#  movies:
+#    rss:
+#      url: 'https://iptorrents.com/torrents/rss?u=1251841;tp=5463c7a866d57e5092d0dfa4b5bf09c6;l48;l7'
+#      username: bluesnogbox
+#      password: 01f2edd0
+#    template: movie
+
+
+schedules:
+  - tasks: '*'
+    interval:
+      minutes: 30
