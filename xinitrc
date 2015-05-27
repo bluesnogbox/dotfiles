@@ -86,6 +86,9 @@ xmodmap -e "keysym Control_R = Multi_key"
 # and use `pamixer -- increase 10` (or ponymix)
 /usr/bin/start-pulseaudio-x11
 
+#start all VBoxClient
+/usr/bin/VBoxClient-all
+
 ###eval $(ssh-agent)
 #eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 eval $( gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh )

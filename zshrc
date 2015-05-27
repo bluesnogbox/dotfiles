@@ -117,8 +117,8 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 export BULLET_ACCESS_TOKEN=P81dRv12Jp7cdza1zCbxyDidnyOl7YSV
 
-#if [ -f /usr/bin/xtermcontrol ]; then
-# xtermcontrol
-#fi
-eval xtermcontrol
+if [ -f /usr/bin/xtermcontrol ]; then
+ eval xtermcontrol
+fi
+#eval xtermcontrol
 eval $(dircolors ~/.dircolors)
