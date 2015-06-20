@@ -28,14 +28,14 @@ autoload run-help-svk
 #unalias run-help
 alias help=run-help
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # Prompt
 PROMPT="%{$fg_bold[green]%}[%n%{$reset_color%}@%{$fg_bold[blue]%}%m %1~]$%{$reset_color%} "
 RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 
 # Path to your oh-my-zsh installation.
-ZSH=/usr/share/oh-my-zsh/
+ZSH=~/oh-my-zsh/
+
+source ${ZSH}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -121,4 +121,4 @@ if [ -f /usr/bin/xtermcontrol ]; then
  eval xtermcontrol
 fi
 #eval xtermcontrol
-eval $(dircolors ~/.dircolors)
+
