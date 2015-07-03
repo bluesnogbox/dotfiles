@@ -152,3 +152,4 @@ bind ^] paste [.]
 # blankerprg rain -d 100
 # idle 30 blanker
 termcapinfo xterm* ti@:te@
+set -g status-right '📅 #(gcalcli --nostarted --calendar "" agenda --nocolor | cut -d " " -f 4- | head -2 | tail -1 | sed "s/^ *//g" | sed "s/    / /g" | cut -c1-19)'
