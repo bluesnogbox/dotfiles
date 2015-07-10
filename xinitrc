@@ -29,11 +29,11 @@ xmodmap -e "keysym Caps_Lock = Control_L"
 xmodmap -e "add    Control = Control_L"
 
 # Swap grave/asciitilde into Alt_R with Escape.
-xmodmap -e "remove  grave = grave"
-xmodmap -e "remove  asciitilde = asciitilde"
-xmodmap -e "remove  Alt = Alt_R"
-xmodmap -e "keysym  Alt_R = grave asciitilde"
-xmodmap -e "keycode 49 = Escape"
+#xmodmap -e "remove  grave = grave"
+#xmodmap -e "remove  asciitilde = asciitilde"
+#xmodmap -e "remove  Alt = Alt_R"
+#xmodmap -e "keysym  Alt_R = grave asciitilde"
+#xmodmap -e "keycode 49 = Escape"
 ###xmodmap -e "add Alt = grave asciitilde"
 
 # Compose key: Control_R
