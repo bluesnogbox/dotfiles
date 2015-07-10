@@ -9,7 +9,6 @@ exec --no-startup-id nitrogen --restore
 
 set $mod Mod1
 #set $mod Mod4
-
 #set the font
 #exec xset fp+ /usr/share/fonts/local/ &
 #exec xset +fp ~/gitcontainer/projects/orp-font/misc
@@ -257,7 +256,7 @@ bar {
         #status_command i3status --config ~/.i3status-vga1.conf
 #}
 
-bindsym $mod+b border toggle
+#bindsym $mod+b border toggle
 # Remove to return to "normal" border.
 #new_window 1pixel
 # NEW
@@ -376,3 +375,6 @@ bar {
             urgent_workspace   #402e2e #402e2e #978965
         }
 }
+for_window [class="^.*"] border pixel 0
+smart_gaps on
+gaps inner 12
