@@ -19,28 +19,28 @@ set $mod Mod1
 # NOTE: some of these are being set in .xinitrc; could maybe move some here.
 
 # Keyboard indicator icon; always on wrong statusbar
-exec fbxkb
+#exec fbxkb
 
 # Too simple maybe?
-exec volumeicon
+#exec volumeicon
 # Wow, fancy!
 #exec volti
 
 # New from .xinitrc
-exec parcellite
-exec nm-applet
+#exec parcellite
+#exec nm-applet
 #exec wicd-client
 #exec batti
 # Frequency not detected??
 #exec gatotray
-exec trayer
+#exec trayer
 # FIXME: check to see if this works, like in .xinitrc
 exec eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 exec stty -ixon
 
 # Growl On Linux
 #exec gol
-exec owncloud
+#exec owncloud
 #exec shutter
 
 # Too big and no real controls.
