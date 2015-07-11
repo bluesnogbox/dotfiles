@@ -124,4 +124,4 @@ fi
 eval $(dircolors ~/.dircolors)
 
 #for server, automatically connect using tmux
-tmux new -A -s ssh
+#tmux new -A -s ssh
