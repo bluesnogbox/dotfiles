@@ -122,3 +122,6 @@ if [ -f /usr/bin/xtermcontrol ]; then
 fi
 #eval xtermcontrol
 eval $(dircolors ~/.dircolors)
+
+#for server, automatically connect using tmux
+tmux new -A -s ssh
