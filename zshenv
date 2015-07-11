@@ -19,4 +19,4 @@ alias x='dtrx'
 alias dd='dcfldd'
 alias xclip='xclip -selection clipboardg
 alias suspend='ICON=$HOME/.xlock/icon.png; TMPBG=/tmp/screen.png; scrot /tmp/screen.png; convert $TMPBG -scale 10% -scale 1000% $TMPBG; convert $TMPBG $ICON -gravity center -composite -matte $TMPBG; i3lock -u -i $TMPBG; sudo pm-suspend'
-alias check-colors='for i in {0..255} ; do printf "\x1b[38;5;${i}mcolour${i}\n"; done'
+
