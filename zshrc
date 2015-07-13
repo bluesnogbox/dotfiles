@@ -33,7 +33,7 @@ PROMPT="%{$fg_bold[green]%}[%n%{$reset_color%}@%{$fg_bold[blue]%}%m %1~]$%{$rese
 RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 
 # Path to your oh-my-zsh installation.
-ZSH=~/oh-my-zsh/
+ZSH=~/.oh-my-zsh/
 
 source ${ZSH}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
