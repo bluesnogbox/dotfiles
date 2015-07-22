@@ -380,7 +380,6 @@ for_window [class="^.*"] border pixel 0
 smart_gaps on
 gaps inner 12
 
-exec i3-msg 'workspace 9' && exec --no-startup-id i3-msg 'exec owncloud'
-exec --no-startup-id i3-msg 'workspace 10'
-exec --no-startup-id i3-msg 'exec keepass'
-exec --no-startup-id i3-msg 'workspace 1'
+#Assign Google Hangouts to space 10
+assign [class="Google-chrome-stable" instance="crx_knipolnnllmklapflnccelgolnpehhpl"] 10
+assign [class="KeePass2"] 10
