@@ -1,6 +1,10 @@
 #!/bin/bash
 
 #while [ "$i" != ^[123] ]; do
+if [ ! -z $TMUX ]; then
+  archey3
+else
+
 echo
 echo -e "Choose your environment:"
 echo 
@@ -22,5 +26,6 @@ else
   echo
   echo -e "Not a valid choice!"
 fi
-echo 
+echo
+fi
 #done
