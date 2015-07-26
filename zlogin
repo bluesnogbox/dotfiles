@@ -1,1 +1,1 @@
-archey3
+~/.display-manager.sh

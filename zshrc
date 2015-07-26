@@ -81,7 +81,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git extract vim-interaction tmux screen)
+plugins=(git extract vim-interaction tmux screen ruby)
 
 # User configuration
 
@@ -121,4 +121,6 @@ if [ -f /usr/bin/xtermcontrol ]; then
  eval xtermcontrol
 fi
 
-
+if ! [ -z $(ruby -e 'print Gem.user_dir') ]; then 
+	PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+fi
