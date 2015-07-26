@@ -69,7 +69,7 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5%
 #bindsym XF86AudioLowerVolume exec amixer -q set Master 2- unmute
 bindsym XF86Battery exec ~/bin/pm.zsh
 
-focus_follows_mouse yes
+focus_follows_mouse no
 #bindsym $mod+b workspace back_and_forth
 bindsym $mod+Tab workspace back_and_forth
 workspace_auto_back_and_forth yes
@@ -383,3 +383,4 @@ gaps inner 12
 #Assign Google Hangouts to space 10
 assign [class="Google-chrome-stable" instance="crx_knipolnnllmklapflnccelgolnpehhpl"] 10
 assign [class="KeePass2"] 10
+assign [class="Owncloud"] 9
