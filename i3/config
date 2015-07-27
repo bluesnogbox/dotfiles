@@ -384,3 +384,8 @@ gaps inner 12
 assign [class="Google-chrome-stable" instance="crx_knipolnnllmklapflnccelgolnpehhpl"] 10
 assign [class="KeePass2"] 10
 assign [class="Owncloud"] 9
+assign [class="yakyak"] 10
+assign [class="Chromium" instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] 10
+assign [class="Google-chrome-beta" instance="crx_knipolnnllmklapflnccelgolnpehhpl"] 10
+exec keepass
+exec owncloud
