@@ -387,5 +387,9 @@ assign [class="Owncloud"] 9
 assign [class="yakyak"] 10
 assign [class="Chromium" instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] 10
 assign [class="Google-chrome-beta" instance="crx_knipolnnllmklapflnccelgolnpehhpl"] 10
+assign [class="Google-chrome" instance="crx_knipolnnllmklapflnccelgolnpehhpl"] 10
+exec --no-startup-id google-chrome-stable --app-id=knipolnnllmklapflnccelgolnpehhpl --auto-launch-at-startup
 exec keepass
 exec owncloud
+
+exec --no-startup-id lemonbar
