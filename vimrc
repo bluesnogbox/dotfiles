@@ -103,3 +103,21 @@ if has('langmap') && exists('+langnoremap')
   set langnoremap
 endif
 set number
+set clipboard=unnamedplus
+" Add support for remote xclip copy/paste
+vmap "+y :!xclip -f -selection clipboard
+map "+p :r!xclip -o -selection clipboard
+
+" add shortcuts for ctrl+$I for copy/paste/cut
+"vmap <c-x> "+x
+"vmap <c-c> "+y
+"nmap <c-p> "+p
+
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/rainbow_parentheses.vim'
+call plug#end()
