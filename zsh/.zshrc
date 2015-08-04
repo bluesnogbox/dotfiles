@@ -85,7 +85,7 @@ plugins=(git extract vim-interaction tmux screen ruby command-not-found)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:/opt/Aptana_Studio_3
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

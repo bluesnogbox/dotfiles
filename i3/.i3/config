@@ -90,9 +90,9 @@ bindsym $mod+Return exec xfce4-terminal #termite # xterm #termite
 bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run -b -nb red
+bindsym $mod+d exec dmenu_run -b -nb red
 # try shellex instead: https://github.com/Merovius/shellex
-bindsym $mod+d exec shellex -bg brown -fg yellow
+#bindsym $mod+d exec shellex -bg brown -fg yellow
 
 # lock screen
 # https://faq.i3wm.org/question/83/how-to-run-i3lock-after-computer-inactivity/
@@ -391,5 +391,13 @@ assign [class="Google-chrome" instance="crx_knipolnnllmklapflnccelgolnpehhpl"] 1
 exec --no-startup-id google-chrome-stable --app-id=knipolnnllmklapflnccelgolnpehhpl --auto-launch-at-startup
 exec keepass
 exec owncloud
-
-exec --no-startup-id lemonbar
+workspace 1 output DVI-D-0
+workspace 3 output DVI-D-0
+workspace 5 output DVI-D-0
+workspace 7 output DVI-D-0
+workspace 9 output DVI-D-0
+workspace 2 output DVI-I-1
+workspace 4 output DVI-I-1
+workspace 6 output DVI-I-1
+workspace 8 output DVI-I-1
+workspace 10 output DVI-I-1
