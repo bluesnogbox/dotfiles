@@ -85,7 +85,7 @@ plugins=(git extract vim-interaction tmux screen ruby autojump z)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$(ruby -rubygems -e "puts Gem.user_dir")/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
