@@ -105,8 +105,8 @@ endif
 set number
 set clipboard=unnamedplus
 " Add support for remote xclip copy/paste
-vmap "+y :!xclip -f -selection clipboard
-map "+p :r!xclip -o -selection clipboard
+" vmap "+y :!xclip -f -selection clipboard
+" map "+p :r!xclip -o -selection clipboard
 
 " add shortcuts for ctrl+$I for copy/paste/cut
 "vmap <c-x> "+x
