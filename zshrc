@@ -28,20 +28,20 @@ autoload run-help-svk
 #unalias run-help
 alias help=run-help
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # Prompt
 PROMPT="%{$fg_bold[green]%}[%n%{$reset_color%}@%{$fg_bold[blue]%}%m %1~]$%{$reset_color%} "
 RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 
 # Path to your oh-my-zsh installation.
-ZSH=/usr/share/oh-my-zsh/
+ZSH=~/.oh-my-zsh/
+
+source ${ZSH}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="alanpeabody"
+ZSH_THEME="gallois"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
@@ -81,11 +81,11 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git extract vim-interaction screen)
+plugins=(git extract vim-interaction screen command-not-found tmux z)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/opt/Aptana_Studio_3/:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -121,4 +121,7 @@ if [ -f /usr/bin/xtermcontrol ]; then
  eval xtermcontrol
 fi
 #eval xtermcontrol
-eval $(dircolors ~/.dircolors)
+
+
+[[ -s /home/taylor/.autojump/etc/profile.d/autojump.sh ]] && source /home/taylor/.autojump/etc/profile.d/autojump.sh
+
