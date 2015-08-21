@@ -103,3 +103,4 @@ if has('langmap') && exists('+langnoremap')
   set langnoremap
 endif
 set number
+colorscheme torte
