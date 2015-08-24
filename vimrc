@@ -121,3 +121,8 @@ set expandtab
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/rainbow_parentheses.vim'
 call plug#end()
+
+" commentry
+execute pathogen#infect()
+nmap zz yygccp
+vmap zz V&It;Esc>gvygvgc`>p
