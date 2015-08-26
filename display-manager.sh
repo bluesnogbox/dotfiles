@@ -19,7 +19,7 @@ if [[ "$i" =~ ^[123]$ ]]; then
   elif [ "$i" == "2" ]; then
     startx /home/taylor/.xinitrc-manjaro
   elif [ "$i" == "3" ]; then
-    archey3
+    screenfetch
   fi
 else
   echo

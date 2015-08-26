@@ -90,9 +90,9 @@ bindsym $mod+Return exec xfce4-terminal #termite # xterm #termite
 bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run -b -nb red
+bindsym $mod+d exec dmenu_run -b -nb red
 # try shellex instead: https://github.com/Merovius/shellex
-bindsym $mod+d exec shellex -bg brown -fg yellow
+#bindsym $mod+d exec shellex -bg brown -fg yellow
 
 # lock screen
 # https://faq.i3wm.org/question/83/how-to-run-i3lock-after-computer-inactivity/
@@ -257,7 +257,7 @@ bar {
         #status_command i3status --config ~/.i3status-vga1.conf
 #}
 
-#bindsym $mod+b border toggle
+bindsym $mod+b border toggle
 # Remove to return to "normal" border.
 #new_window 1pixel
 # NEW
