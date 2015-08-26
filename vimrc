@@ -103,3 +103,11 @@ if has('langmap') && exists('+langnoremap')
   set langnoremap
 endif
 set number
+
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/rainbow_parentheses.vim'
+call plug#end()
+
+execute pathogen#infect()
+nmap zz yygccp
+vmap zz V&It;Esc>gvygvgc`>p
