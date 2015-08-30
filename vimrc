@@ -1,4 +1,4 @@
-" An example for a vimrc file.
+"  An example for a vimrc file.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
 " Last change:	2014 Nov 05
@@ -24,9 +24,9 @@ set backspace=indent,eol,start
 "if has("vms")
 "  set nobackup		" do not keep a backup file, use versions instead
 "else
-"  set backup		" keep a backup file (restore to previous version)
-"  set undofile		" keep an undo file (undo changes after closing)
-"endif "endif
+  "set backup		" keep a backup file (restore to previous version)
+  "set undofile		" keep an undo file (undo changes after closing)
+  "endif
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
@@ -103,11 +103,26 @@ if has('langmap') && exists('+langnoremap')
   set langnoremap
 endif
 set number
+set clipboard=unnamedplus
+" Add support for remote xclip copy/paste
+" vmap "+y :!xclip -f -selection clipboard
+" map "+p :r!xclip -o -selection clipboard
+
+" add shortcuts for ctrl+$I for copy/paste/cut
+"vmap <c-x> "+x
+"vmap <c-c> "+y
+"nmap <c-p> "+p
+
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/rainbow_parentheses.vim'
 call plug#end()
 
+" commentry
 execute pathogen#infect()
 nmap zz yygccp
 vmap zz V&It;Esc>gvygvgc`>p
