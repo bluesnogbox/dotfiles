@@ -82,6 +82,10 @@ xmodmap -e "keysym Control_R = Multi_key"
 # Supposedly nitrogen is better than feh for multiple screens.
 ###nitrogen --restore &
 
+#####
+xrdb -merge ~/.Xresources
+#####
+
 # https://wiki.archlinux.org/index.php/PulseAudio
 # and use `pamixer -- increase 10` (or ponymix)
 /usr/bin/start-pulseaudio-x11
