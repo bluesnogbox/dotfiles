@@ -15,9 +15,9 @@ echo
 read -n 1 -r i
 if [[ "$i" =~ ^[123]$ ]]; then
   if [ "$i" == "1" ]; then
-    startx /home/taylor/.xinitrc-i3
+    startx
   elif [ "$i" == "2" ]; then
-    startx /home/taylor/.xinitrc-manjaro
+    startxfce4
   elif [ "$i" == "3" ]; then
     screenfetch
   fi
