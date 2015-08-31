@@ -7,6 +7,10 @@ URxvt.clipboard.copycmd:  xclip -i -sel clipboard
 URxvt.clipboard.pastecmd: xclip -o -sel clipboard
 !!!!!!!!!!
 
+URxvt*.transparent: true
+! URxvt*.shading: 0 to 99 darkens; 101 to 200 lightens
+URxvt*.shading: 20
+
 Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
