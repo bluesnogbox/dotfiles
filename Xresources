@@ -5,6 +5,8 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 URxvt.clipboard.copycmd:  xclip -i -sel clipboard
 URxvt.clipboard.pastecmd: xclip -o -sel clipboard
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+
 !!!!!!!!!!
 
 URxvt*.transparent: true
@@ -36,13 +38,13 @@ URxvt.urlLauncher: xdg-open
 URxvt.urlButton: 1
 URxvt.underlineURLs: True
 
-URxvt.copyCommand:  xclip -i -selection clipboard
+URxvt.copyCommand:  xclip -i -sel clipboard
 URxvt.pasteCommand: xclip -o -selection clipboard
 
 ! Keybindings
-URxvt.keysym.Mod4-c: perl:clipboard:copy
-URxvt.keysym.Mod4-v: perl:clipboard:paste
-URxvt.keysym.Mod4-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.Mod-c: perl:clipboard:copy
+URxvt.keysym.Mod-v: perl:clipboard:paste
+URxvt.keysym.Mod-C-v: perl:clipboard:paste_escaped
 URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
