@@ -61,6 +61,10 @@ font -misc-orp-bold-r-*--*-*-*-*-*-*-iso10646-1
 # https://faq.i3wm.org/question/183/how-to-get-i3wm-font-anti-aliasing/
 #font xft:Droid Sans Mono 20
 
+# print screen
+bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f'
+bindsym Mod+Print exec scrot -s -e 'mv $f /tmp/ && gimp /tmp/$f'
+
 # Volume control
 # http://blog.bstpierre.org/controlling-audio-with-i3
 # bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
@@ -335,29 +339,29 @@ workspace "9" output eDP1
 
 # App-specific
 # Use `xprop` (and maybe `xwininfo`) to determine class, title, etc.
-for_window [title=".* LibreOffice .*"] floating enable; border normal
-for_window [class="Firefox"] border normal
-for_window [class="(?i)google-chrome"] border normal
-for_window [class="(?i)chromium"] border normal
+for_window [title=".* LibreOffice .*"] floating enable; border none
+for_window [class="Firefox"] border none
+for_window [class="(?i)google-chrome"] border none
+for_window [class="(?i)chromium"] border none
 #for_window [class="(?i)thunar"] floating enable; border normal
-for_window [class="(?i)gimp"] floating enable; border normal
-for_window [class="(?i)gnumeric"] border normal
-for_window [class="(?i)soffice"] border normal
-for_window [class="(?i)feh"] floating enable; border normal
-for_window [class="(?i)smplayer"] floating enable; border normal
-for_window [class="(?i)vlc"] floating enable; border normal
-for_window [class="(?i)nautilus"] border normal
-for_window [class="(?i)xvidcap"] floating enable; border normal
-for_window [title=".* Pinboard - Save a Bookmark - Aurora"] floating enable; border normal
-for_window [title="Mozilla Persona.*"] floating enable; border normal
-for_window [title="gbdfed*"] floating enable; border normal
-for_window [title="xfce4-notifyd"] floating enable; border normal
-for_window [title="Wicd Network Manager"] floating enable; border normal
-for_window [title="- Shutter"] floating enable; border normal
+for_window [class="(?i)gimp"] floating enable; border none
+for_window [class="(?i)gnumeric"] border none 
+for_window [class="(?i)soffice"] border none
+for_window [class="(?i)feh"] floating enable; border none
+for_window [class="(?i)smplayer"] floating enable; border none
+for_window [class="(?i)vlc"] floating enable; border none
+for_window [class="(?i)nautilus"] border none
+for_window [class="(?i)xvidcap"] floating enable; border none
+for_window [title=".* Pinboard - Save a Bookmark - Aurora"] floating enable; border none
+for_window [title="Mozilla Persona.*"] floating enable; border none
+for_window [title="gbdfed*"] floating enable; border none
+for_window [title="xfce4-notifyd"] floating enable; border none
+for_window [title="Wicd Network Manager"] floating enable; border none
+for_window [title="- Shutter"] floating enable; border none
 # key-mon
 for_window [title="Keyboard Status Monitor"] floating enable
 for_window [title="Text Import - "] floating enable
-for_window [title="Cinelerra: "] floating enable; border normal
+for_window [title="Cinelerra: "] floating enable; border none
 for_window [title="xfce4-notifyd"] floating enable; border none
 #for_window [title="key-mon"] floating enable; border none
 

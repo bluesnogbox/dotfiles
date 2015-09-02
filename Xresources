@@ -33,8 +33,9 @@ URxvt.urgentOnBell: True
 URxvt.cursorBlink: False
 
 ! Extensions
-URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select
-URxvt.urlLauncher: xdg-open
+URxvt.perl-ext-common: default,universal-clipboard,clipboard,keyboard-select,url-select,matcher
+URxvt.matcher.button: 1
+URxvt.urlLauncher: /usr/bin/google-chrome-beta
 URxvt.urlButton: 1
 URxvt.underlineURLs: True
 
