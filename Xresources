@@ -141,3 +141,5 @@ urxvt*background: black
 *color13: #AD7FA8
 *color14: #fcaf3e
 *color15: #EEEEEC
+
+xterm*termName: xterm-256color
