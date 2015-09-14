@@ -365,12 +365,16 @@ for_window [class="^.*"] border pixel 0
 smart_gaps on
 gaps inner 12
 
+# To get Class and Instance, use xprop
+
+
 #Assign Google Hangouts to space 10
 assign [class="Google-chrome-stable" instance="crx_knipolnnllmklapflnccelgolnpehhpl"] 10
 assign [class="KeePass2"] 10
 assign [class="Owncloud"] 9
 assign [class="yakyak"] 10
 assign [class="owncloud"] 9
+assign [class="ownCloud"] 9
 assign [class="Chromium" instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] 10
 assign [class="Google-chrome-beta" instance="crx_knipolnnllmklapflnccelgolnpehhpl"] 10
 #exec --no-startup-id /opt/google/chrome-beta/google-chrome-beta --user-data-dir=/home/taylor/.config/google-chrome-beta --profile-directory=Default --app-id=knipolnnllmklapflnccelgolnpehhpl
