@@ -22,18 +22,18 @@ set $mod Mod1
 #exec fbxkb
 
 # Too simple maybe?
-#exec volumeicon
+exec volumeicon
 # Wow, fancy!
 #exec volti
 
 # New from .xinitrc
 #exec parcellite
-#exec nm-applet
+exec --no-startup-id nm-applet
 #exec wicd-client
 #exec batti
 # Frequency not detected??
 #exec gatotray
-#exec trayer
+#exec trayer --transparent true --alpha 255 --tint black
 # FIXME: check to see if this works, like in .xinitrc
 exec eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 #exec stty -ixon

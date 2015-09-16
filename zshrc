@@ -124,3 +124,6 @@ eval $(dircolors ~/.dircolors)
 
 #add Ruby Gems
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
+#Add working directory to java classpath
+CLASSPATH="$(pwd):$CLASSPATH"

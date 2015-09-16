@@ -23,3 +23,4 @@ alias lock='ICON=$HOME/.xlock/icon.png; TMPBG=/tmp/screen.png; scrot /tmp/screen
 alias zshrc='source ~/.zshrc && source ~/.zshenv'
 alias jgrasp='~/.jgrasp/bin/jgrasp'
 alias ncmpcpp='tmux new-session -A -s ncmpcpp /usr/bin/ncmpcpp --host bluesnogbox.duckdns.org --port 6600'
+alias trayer='trayer --transparent true --alpha 255 --tint black'
